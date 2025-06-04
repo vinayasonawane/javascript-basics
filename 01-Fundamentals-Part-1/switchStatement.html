@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Fundamentals – Part 1</title>
+  </head>
+  <body>
+    <h1>JavaScript Fundamentals - Switch Statement</h1>
+
+    <script>
+      const day = "Fri";
+
+      switch (day) {
+        case "Mon":
+          console.log("Start of the week! Update linkedIn");
+          break;
+        case "Tues":
+        case "Wed": // can add multiple case like this
+          console.log("Update xls");
+          break;
+        case "Thu":
+          console.log("Update Git");
+          break;
+        case "Fri":
+          console.log("Relax, it's friday");
+          break; // if we remove this break - below console will print
+        default:
+          console.log("No valid day");
+      }
+    </script>
+  </body>
+</html>
