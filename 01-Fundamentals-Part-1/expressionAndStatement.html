@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Fundamentals – Part 1</title>
+  </head>
+  <body>
+    <h1>JavaScript Fundamentals - Expression And Statement</h1>
+
+    <script>
+      // An expression is a piece of code that produces a value.
+      // It can be as simple as a literal value (e.g., 5, "hello") or a variable (x), or it can involve operators and function calls (e.g., 5 + 2, myFunction()).
+      // Expressions are evaluated to obtain a single value.
+      // They can be used anywhere a value is expected, such as in variable assignments, function arguments, or within other expressions.
+      // Examples:
+      // Arithmetic operations: 5 + 7, x * 2
+      // String literals: "Hello", 'World'
+      // Variable access: myVariable, user.name
+      // Function calls: myFunction(), Math.sqrt(9)
+      // Logical expressions: x > 10, a && b
+      // Assignment expressions: x = 5, y += 2
+      // Ternary expressions: isAdult ? "yes" : "no"
+      const x = 5;
+      const y = 2 + 3;
+      console.log(x);
+
+      // A statement is an instruction that performs an action.
+      // Statements are executed to control program flow and perform operations.
+      // They do not necessarily produce a value.
+      // Statements often contain expressions.
+      // Examples:
+      // Variable declarations: let x = 5;, const name = "Alice";
+      // Assignment statements: x = 10;, y += 5;
+      // Conditional statements: if (x > 10) { ... }, else { ... }
+      // Looping statements: for (let i = 0; i < 10; i++) { ... }, while (x > 0) { ... }
+      // Function declarations: function myFunction() { ... }
+      // Return statements: return result;
+      // Expression statements: myFunction();, x++;
+
+      const person1 = {
+        firstName: "Chris",
+        lastName: "Martin",
+      };
+      function getFullName() {
+        return this.firstName + " " + this.lastName;
+      }
+      person1.getFullName = getFullName;
+      console.log(person1.getFullName()); // "Chris Martin"
+    </script>
+  </body>
+</html>
