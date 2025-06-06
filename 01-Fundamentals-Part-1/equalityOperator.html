@@ -8,11 +8,22 @@
   </head>
   <body>
     <h1>JavaScript Fundamentals - equality operator</h1>
+    <p>JavaScript has two equality operators with different behaviors:</p>
+    <p>
+      As a best practice, always use strict equality (===) to avoid unexpected
+      type coercion bugs. If you need to compare values of different types,
+      convert them explicitly before comparison.
+    </p>
 
     <script>
       const x = 5;
+
+      // Loose equality (==) - WITH type coercion
       console.log(x == "5"); //true
+
+      // Strict equality (===) - NO type coercion
       console.log(x === "5"); //false -- 5 string vs number
+
       console.log(x != "5"); //true
       console.log(x !== "5"); //false -- 5 string vs number
     </script>

@@ -8,7 +8,39 @@
   </head>
   <body>
     <h1>values and variables</h1>
-
+    <p>
+      Values are the most fundamental unit of information in programming -
+      pieces of data we want to use or store. We can store these values in
+      variables to reuse them.
+    </p>
+    <p>
+      JavaScript has three ways to declare variables: Let, Const, and Var
+      <br />
+      As a best practice, use const by default and only use let when you're sure
+      the variable needs to change. This minimizes variable mutations and
+      potential bugs. Avoid var completely as it has function scope rather than
+      block scope (we'll learn more about this later).
+      <br />
+      You can actually create variables without any keyword, but this is
+      terrible practice as it creates properties on the global object instead of
+      properly scoped variables
+    </p>
+    <h2>JavaScript Variable Naming Rules</h2>
+    <ul>
+      <li>
+        Use <strong>camelCase</strong> (first word lowercase, subsequent words
+        capitalized)
+      </li>
+      <li>
+        Names can contain <code>letters</code>, <code>numbers</code>,
+        <code>underscores (_)</code>, or <code>$</code> signs
+      </li>
+      <li>Names <strong>cannot start with a number</strong></li>
+      <li>Names <strong>cannot use reserved JavaScript keywords</strong></li>
+      <li>
+        Variable names should be <strong>descriptive</strong> and meaningful
+      </li>
+    </ul>
     <script>
       // eg. of console log - values and variables
       console.log(48 + 28 - 9 + 6);

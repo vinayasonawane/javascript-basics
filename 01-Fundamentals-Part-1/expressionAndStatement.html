@@ -8,37 +8,67 @@
   </head>
   <body>
     <h1>JavaScript Fundamentals - Expression And Statement</h1>
+    <p>An expression is a piece of code that produces a value.</p>
+    <p>
+      It can be as simple as a literal value (e.g., 5, "hello") or a variable
+      (x), or it can involve operators and function calls (e.g., 5 + 2,
+      myFunction()).
+    </p>
+    <p>Expressions are evaluated to obtain a single value.</p>
+    <p>
+      They can be used anywhere a value is expected, such as in variable
+      assignments, function arguments, or within other expressions. Examples:
+    </p>
+    <ul>
+      <li>Arithmetic operations: <code>5 + 7</code>, <code>x * 2</code></li>
+      <li>String literals: <code>"Hello"</code>, <code>'World'</code></li>
+      <li>Variable access: <code>myVariable</code>, <code>user.name</code></li>
+      <li>
+        Function calls: <code>myFunction()</code>, <code>Math.sqrt(9)</code>
+      </li>
+      <li>
+        Logical expressions: <code>x &gt; 10</code>, <code>a &amp;&amp; b</code>
+      </li>
+      <li>Assignment expressions: <code>x = 5</code>, <code>y += 2</code></li>
+      <li>Ternary expressions: <code>isAdult ? "yes" : "no"</code></li>
+    </ul>
+
+    <pre>
+       A statement is an instruction that performs an action. 
+      Statements are executed to control program flow and perform operations.
+      They do not necessarily produce a value.
+      Statements often contain expressions.
+      Examples:
+    </pre>
+    <ul>
+      <li>
+        Variable declarations: <code>let x = 5;</code>,
+        <code>const name = "Alice";</code>
+      </li>
+      <li>Assignment statements: <code>x = 10;</code>, <code>y += 5;</code></li>
+      <li>
+        Conditional statements: <code>if (x &gt; 10) { ... }</code>,
+        <code>else { ... }</code>
+      </li>
+      <li>
+        Looping statements:
+        <code>for (let i = 0; i &lt; 10; i++) { ... }</code>,
+        <code>while (x &gt; 0) { ... }</code>
+      </li>
+      <li>Function declarations: <code>function myFunction() { ... }</code></li>
+      <li>Return statements: <code>return result;</code></li>
+      <li>
+        Expression statements: <code>myFunction();</code>, <code>x++;</code>
+      </li>
+    </ul>
 
     <script>
-      // An expression is a piece of code that produces a value.
-      // It can be as simple as a literal value (e.g., 5, "hello") or a variable (x), or it can involve operators and function calls (e.g., 5 + 2, myFunction()).
-      // Expressions are evaluated to obtain a single value.
-      // They can be used anywhere a value is expected, such as in variable assignments, function arguments, or within other expressions.
-      // Examples:
-      // Arithmetic operations: 5 + 7, x * 2
-      // String literals: "Hello", 'World'
-      // Variable access: myVariable, user.name
-      // Function calls: myFunction(), Math.sqrt(9)
-      // Logical expressions: x > 10, a && b
-      // Assignment expressions: x = 5, y += 2
-      // Ternary expressions: isAdult ? "yes" : "no"
+      // expression
       const x = 5;
       const y = 2 + 3;
       console.log(x);
 
-      // A statement is an instruction that performs an action.
-      // Statements are executed to control program flow and perform operations.
-      // They do not necessarily produce a value.
-      // Statements often contain expressions.
-      // Examples:
-      // Variable declarations: let x = 5;, const name = "Alice";
-      // Assignment statements: x = 10;, y += 5;
-      // Conditional statements: if (x > 10) { ... }, else { ... }
-      // Looping statements: for (let i = 0; i < 10; i++) { ... }, while (x > 0) { ... }
-      // Function declarations: function myFunction() { ... }
-      // Return statements: return result;
-      // Expression statements: myFunction();, x++;
-
+      // statement
       const person1 = {
         firstName: "Chris",
         lastName: "Martin",
