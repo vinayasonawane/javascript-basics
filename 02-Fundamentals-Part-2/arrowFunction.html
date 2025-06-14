@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals – Part 2</title>
+  </head>
+  <body>
+    <h1>Arrow Function</h1>
+    <script>
+      const fruit = () => "Apple";
+      console.log(fruit);
+
+      const fruit2 = () => {
+        return "Mango";
+      };
+      console.log(fruit2);
+
+      // it throws an error - object should be wrap in () bracket or use return keyword -- check below corrected example
+      // const person = ()=>{name:"Jack", id:1}
+      // console.log(person)
+
+      const person = () => {
+        return {
+          name: "jack",
+          id: 1,
+        };
+      };
+      console.log(person);
+
+      // or
+
+      const person1 = () => ({ name: "joe", id: 2 });
+      console.log(person1);
+
+      // if we call function like this - without return - it'll be undefined
+      const country = () => {
+        "India";
+      };
+      country();
+      console.log(country());
+    </script>
+  </body>
+</html>
