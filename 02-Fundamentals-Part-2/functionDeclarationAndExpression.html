@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals – Part 2</title>
+  </head>
+  <body>
+    <h1>Function declaration vs. expression</h1>
+    <script>
+      function percentageOfWorld1(population) {
+        return (population / 7900) * 100;
+      }
+
+      const percentageOfWorld2 = function (population) {
+        return (population / 7900) * 100;
+      };
+
+      // function declaration
+      const chinaPerc = percentageOfWorld1(1441);
+      const indiaPerc = percentageOfWorld1(1200);
+
+      // function expression
+      const indiaPerc2 = percentageOfWorld2(1200);
+
+      console.log(chinaPerc, indiaPerc, indiaPerc2);
+    </script>
+  </body>
+</html>

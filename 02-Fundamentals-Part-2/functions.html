@@ -8,17 +8,17 @@
   <body>
     <h1>Functions</h1>
     <script>
-      // apple and orange are parameters
-      function fruitProcessor(apple, orange) {
-        const output = `Juice with ${apple} apples and ${orange} oranges.`;
+      // country, population, capitalCity are parameters
+      function describeCountry(country, population, capitalCity) {
+        const output = `${country} has ${population} people and its capital city is ${capitalCity}`;
         return output;
       }
 
-      // 2,4 - these are arguments
-      const newJuice = fruitProcessor(2, 4);
-
-      console.log(newJuice);
-      console.log(fruitProcessor(2, 9));
+      // (value in bracket)- these are arguments
+      const country1 = describeCountry("Finland", "6 million", "Helsinki");
+      const country2 = describeCountry("India", "120 million", "Delhi");
+      console.log(country1);
+      console.log(country2);
     </script>
   </body>
 </html>

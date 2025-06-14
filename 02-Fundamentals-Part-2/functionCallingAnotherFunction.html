@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals – Part 2</title>
+  </head>
+  <body>
+    <h1>Function calling another function</h1>
+    <script>
+      // example 1
+      const percentageOfWorld1 = (population) => {
+        return (population / 7900) * 100;
+      };
+
+      const describePopulation = (country, population) => {
+        const percentage = percentageOfWorld1(population);
+        return `${country} has ${population} million people, which is about ${percentage}% of the world`;
+      };
+
+      const china = describePopulation("China", 1441);
+      console.log(china);
+
+      // example 2
+      const fruitPieces = (fruit) => {
+        return fruit * 4;
+      };
+      const fruitProcessor = (apples, oranges) => {
+        const applePieces = fruitPieces(apples);
+        const orangePieces = fruitPieces(oranges);
+
+        return `I got ${applePieces} pieces apples and ${orangePieces} pieces oranges.`;
+      };
+
+      console.log(fruitProcessor(2, 4));
+    </script>
+  </body>
+</html>
