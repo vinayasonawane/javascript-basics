@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals – Part 2</title>
+  </head>
+  <body>
+    <h1>Functions</h1>
+    <script>
+      // apple and orange are parameters
+      function fruitProcessor(apple, orange) {
+        const output = `Juice with ${apple} apples and ${orange} oranges.`;
+        return output;
+      }
+
+      // 2,4 - these are arguments
+      const newJuice = fruitProcessor(2, 4);
+
+      console.log(newJuice);
+      console.log(fruitProcessor(2, 9));
+    </script>
+  </body>
+</html>
