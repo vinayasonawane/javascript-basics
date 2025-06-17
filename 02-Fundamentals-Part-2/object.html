@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals – Part 2</title>
+  </head>
+  <body>
+    <h1>Object methods</h1>
+    <script>
+      // eg. of object
+      const person = {
+        // object with 4 properties
+        firstName: "John", //key:value
+        lastName: "Doe",
+        id: 1,
+        country: "USA",
+        friends: ["Mack", "Ciena"],
+      };
+
+      console.log(person);
+      console.log(person.firstName);
+      console.log(person.friends[1]);
+
+      // eg. 2
+      const myCountry = {
+        country: "Finland",
+        capital: "Helsinki",
+        language: "finnish",
+        population: 6,
+        neighbours: ["Norway", "Sweden", "Russia"],
+      };
+      console.log(
+        `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`
+      );
+
+      myCountry.population += 2;
+      console.log(myCountry.population);
+
+      myCountry["population"] -= 2;
+      console.log(myCountry.population);
+
+      // Objects are Mutable -- below eg.
+      const user = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue",
+      };
+      const x = user;
+      x.firstName = "abc";
+      console.log(user.firstName);
+
+      // eg. of this keyword
+      const student = {
+        name: "John",
+        rollNo: 12,
+        division: "A",
+        birthYear: 1991,
+        hasDrivingLicense: true,
+
+        // calcAge: function () {
+        //   console.log(this);
+        //   return 2025 - this.birthYear;
+        // },
+        calcAge: function () {
+          this.age = 2025 - this.birthYear;
+          return this.age;
+        },
+
+        getSummary: function () {
+          return `${this.name} is ${this.age} - year old student, and he has ${
+            this.hasDrivingLicense ? "a" : "no"
+          } driving license.`;
+        },
+      };
+      student.calcAge();
+      console.log(student.age);
+
+      console.log(student.getSummary());
+    </script>
+  </body>
+</html>
