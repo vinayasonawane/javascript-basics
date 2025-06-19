@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals – Part 2</title>
+  </head>
+  <body>
+    <h1>For Loop</h1>
+    <script>
+      for (let i = 1; i <= 10; i++) {
+        console.log(`Day ${i} of practice JS`);
+      }
+
+      // eg.1 - push array and calculations with for loop instead of doing manually (check array methods file for manual)
+      const populations = [2200, 1230, 3200, 4500];
+      const percentages = [];
+      for (let i = 0; i < populations.length; i++) {
+        percentages.push((populations[i] / 7900) * 100);
+      }
+
+      console.log(percentages);
+
+      // continue - The continue statement skips the current iteration of the loop and proceeds to the next iteration.
+      console.log("------ continue example------------");
+      const student = ["John", 1991, "student", true, 12];
+      for (let i = 0; i < student.length; i++) {
+        if (typeof student[i] !== "string") continue;
+        console.log(student[i], typeof student[i]);
+      }
+
+      console.log("------ break example------------");
+      // break -- The break statement terminates the loop it is enclosed in immediately
+      for (let i = 0; i < student.length; i++) {
+        if (typeof student[i] === "boolean") break;
+        console.log(student[i], typeof student[i]);
+      }
+
+      console.log("------ looping backward ------------");
+      // looping backward
+      for (let i = student.length - 1; i >= 0; i--) {
+        console.log(i, student[i]);
+      }
+
+      console.log("------ loop inside loop ------------");
+      for (let i = 1; i <= 5; i++) {
+        console.log(`---------Day ${i} of the javascript class-----------`);
+        for (let i = 1; i <= 2; i++) {
+          console.log(`Everyday spending ${i} hours for practice`);
+        }
+      }
+    </script>
+  </body>
+</html>
