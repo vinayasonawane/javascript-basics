@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals – Part 2</title>
+  </head>
+  <body>
+    <h1>Strict mode</h1>
+    <pre>
+      JavaScript's strict mode is an important feature that helps developers avoid accidental errors. To
+ activate it, you simply add 
+'use strict';
+ at the very beginning of your JavaScript file, before any
+ other code (comments are allowed).
+    </pre>
+    <script>
+      "use strict";
+
+      let hasDriversLicense = false;
+      const passTest = true;
+      if (passTest) hasDriverLicense = true; // Typo! Missing 's'
+      if (hasDriversLicense) console.log("I can drive");
+    </script>
+  </body>
+</html>
